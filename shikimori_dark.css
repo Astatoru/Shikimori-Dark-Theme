@@ -22,7 +22,7 @@ body {
   --link-hover: color-mix(in srgb, var(--link-primary) 60%, white);
   --link-active: color-mix(in srgb, var(--link-primary) 70%, white);
 
-  --selection-bckg: #fff1;
+  --selection-bckg: #5292d280;
   --selection-search: #00ff0839;
 
   --def-icon: url("//shikimori.one/assets/layouts/l-top_menu-v2/glyph.svg");
@@ -277,7 +277,7 @@ header.head h2,
   .b-add_to_list
   :is(.trigger, .option),
 .b-add_to_list :is(.trigger, .option) {
-  color: var(--txt-secondary) !important;
+  color: var(--link-color) !important;
   background: var(--bckg-primary) !important;
   border-color: var(--bckg-dark) !important;
 }
@@ -286,7 +286,10 @@ header.head h2,
   :is(.trigger, .edit) {
   color: var(--clr-main-primary);
 }
+.b-add_to_list .trigger-arrow {
+	  color: var(--link-color) !important;
 
+  }
 /* #profile */
 .b-stats_bar .stat_names .stat_name a {
   color: var(--txt-secondary);
@@ -315,10 +318,10 @@ header.head h2,
   --link-color: color-mix(in srgb, var(--first), #fff 60%);
   --link-hover-color: color-mix(in srgb, var(--first), #fff 70%);
   &.anime {
-    --first: green;
+    --first: #79a9cf;
   }
   &.manga {
-    --first: purple;
+    --first: #cc69ad;
   }
   &.lifetime {
     --first: var(--bar-main);
@@ -342,6 +345,11 @@ header.head h2,
     background-color: color-mix(in srgb, var(--first), #000 20%);
   }
 }
+/* Change color of comments inside anime list */
+.p-user_rates-index .list-lines tr td .rate-text {
+	  color:#98C379;
+
+  }
 /* Профиль: Активность на сайте */
 .bar.simple .bar {
   &.s0 {
@@ -1231,4 +1239,81 @@ html:has(
   & .l-top_menu-v2 .logo-container .glyph {
     background-image: var(--icon,url(https://raw.githubusercontent.com/Dedonych/Shikimori-Dark-Theme/master/icons/gift.png));
   }
+}
+/* Add some pixels at about me block bottom */
+.block.about {
+    border-bottom-width: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #333333;
+    margin-bottom: 0px;
+}
+/* Add some pixels at comments block bottom */
+.shiki_editor-selector.b-shiki_editor-v2 > footer {
+    border-bottom-width: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #333333;
+    margin-bottom: 0px;
+}
+/* Hide clubs and friends */
+.m30.cc-2a {
+	display: none;
+}
+/* Hide achievements */
+.achievements.block {
+	display:none;
+}
+/* Hide about me headline */
+.block.about > .subheadline {
+	display: none;
+}
+/* Hide links at the bottom */
+.l-footer {
+	display: none;
+}
+/* Hide arrow */
+.active.b-to-top {
+	display: none;
+}
+/* Hide third item in the history list */
+div.entry:nth-of-type(3) {
+	display: none;
+}
+/* Hide reviews */
+.b-reviews_navigation {
+	display: none;
+}
+/* Hide links under information tab */
+.additional-links > .line-container {
+	display: none;
+}
+/* Hide description source */
+.description-current > .b-source {
+	display: none;
+}
+/* Reorder blocks in profile */
+.bubbled-processed {
+	text-decoration: initial;
+}
+.c-column.c-left {
+	display: none;
+}
+.c-column.c-right.c-right.c-right {
+	width: 100%;
+}
+.b-user.c-column.avatar {
+	width: auto;
+	margin-right: 1%;
+	float: none;
+}
+.b-club.c-colum.avatar {
+	width: auto;
+	margin-right: 0;
+}
+/* Sticky header */
+@media screen and (min-width: 1025px) {
+.l-top_menu-v2 { position: sticky; top: 0;
+		}
+.l-top_menu-v2 .active .submenu {
+max-height: calc(100vh - var(--top-menu-height)); overflow-y: auto;
+	}
 }
