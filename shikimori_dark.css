@@ -709,6 +709,7 @@ input[type="checkbox"] {
   background-color: var(--bckg-dark);
   border-color: var(--txt-secondary-dark);
   color: var(--txt-secondary);
+  border: none;
 }
 :is(.p-animes-show, .p-mangas-show, .p-ranobe-show) .other-names:hover,
 :is(.b-comments, .b-forum)
