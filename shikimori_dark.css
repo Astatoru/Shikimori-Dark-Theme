@@ -1303,3 +1303,17 @@ div.entry:nth-of-type(3) {
 max-height: calc(100vh - var(--top-menu-height)); overflow-y: auto;
 	}
 }
+/* Add some pixels at about me block bottom */
+.block.about {
+    border-bottom-width: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #333333;
+    margin-bottom: 0px;
+}
+/* Add some pixels at comments block bottom */
+.shiki_editor-selector.b-shiki_editor-v2 > footer {
+    border-bottom-width: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #333333;
+    margin-bottom: 0px;
+}
