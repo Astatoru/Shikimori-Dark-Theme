@@ -1240,20 +1240,6 @@ html:has(
     background-image: var(--icon,url(https://raw.githubusercontent.com/Dedonych/Shikimori-Dark-Theme/master/icons/gift.png));
   }
 }
-/* Add some pixels at about me block bottom */
-.block.about {
-    border-bottom-width: 30px;
-    border-bottom-style: solid;
-    border-bottom-color: #333333;
-    margin-bottom: 0px;
-}
-/* Add some pixels at comments block bottom */
-.shiki_editor-selector.b-shiki_editor-v2 > footer {
-    border-bottom-width: 30px;
-    border-bottom-style: solid;
-    border-bottom-color: #333333;
-    margin-bottom: 0px;
-}
 /* Hide clubs and friends */
 .m30.cc-2a {
 	display: none;
