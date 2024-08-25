@@ -597,9 +597,10 @@ input[type="checkbox"] {
 /* #offtop  */
 .b-offtopic_marker.active:before,
 .b-offtopic_marker.off:before,
-.b-offtopic_marker.active:hover:before {
+.b-offtopic_marker.active:hover:before,
+body[data-locale=ru] .b-offtopic_marker:before {
   background-color: #5c2940 !important;
-  border: 0 !important;
+  border: 2px solid #5c2940 !important;
 }
 
 /* #main status tag */
