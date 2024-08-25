@@ -395,7 +395,6 @@ header.head h2,
   background: var(--bckg-lighter);
   color: var(--txt-primary);
   border: 0;
-  border-radius: 4px;
 }
 input:focus {
   border-color: grey !important;
@@ -608,7 +607,6 @@ input[type="checkbox"] {
   background-color: var(--bckg-primary);
   border: 0 !important;
   padding: 1px 6px !important;
-  border-radius: 4px;
 
   &.critique {
     background-color: PaleVioletRed;
@@ -659,7 +657,6 @@ input[type="checkbox"] {
 /* #achievement сверху справа уведомление */
 .b-achievements_notifier .achievement:is(.gained, .lost) {
   background: var(--bckg-dark);
-  border-radius: 4px;
 }
 
 /* #catalog #title status */
@@ -711,7 +708,6 @@ input[type="checkbox"] {
 :is(.b-comments, .b-forum) .faye-loader {
   background-color: var(--bckg-dark);
   border-color: var(--txt-secondary-dark);
-  border-radius: 4px;
   color: var(--txt-secondary);
 }
 :is(.p-animes-show, .p-mangas-show, .p-ranobe-show) .other-names:hover,
@@ -724,7 +720,6 @@ input[type="checkbox"] {
   ):hover {
   background-color: var(--bckg-primary);
   border-color: var(--txt-secondary-dark);
-  border-radius: 4px;
   color: var(--txt-secondary);
 }
 
@@ -974,7 +969,6 @@ code.b-code_inline {
   background: var(--dropdown, var(--my-clr)) !important;
   border: 0 !important;
   padding: 2px;
-  border-radius: 4px;
 }
 /* dropdown menu background*/
 .l-top_menu-v2 .menu-dropdown > span[tabindex] {
