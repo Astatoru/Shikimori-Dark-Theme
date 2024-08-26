@@ -81,6 +81,10 @@ html[data-color-mode="light"] {
     color: var(--txt-primary);
     border-color: var(--clr-main-dark);
   }
+/* user anime list search */
+.b-collection_search .field input {
+  background-color: var(--bckg-primary);
+}
   /* remove shadow #search  */
   &::after,
   &::before {
