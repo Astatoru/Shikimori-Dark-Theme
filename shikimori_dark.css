@@ -635,17 +635,10 @@ body[data-locale=ru] .b-new_marker:before {
   &.censored {
     background-color: MediumVioletRed;
   }
-  &:is(.other, .studio) {
+  &:is(.other, .) {
     background-color: var(--bckg-primary);
     color: var(--txt-primary);
   }
-  .studio.b-anime_status_tag {
-    background-color: var(--selection-bckg);
-    border: 1px solid var(--bckg-lighter) !important;
-}
-.b-anime_status_tag.studio[href]:hover {
-  background-color: var(--my-clr);
-}
 }
 
 /* #status minified (#tournaments) */
@@ -1328,4 +1321,11 @@ max-height: calc(100vh - var(--top-menu-height)); overflow-y: auto;
     border-bottom-style: solid;
     border-bottom-color: #333333;
     margin-bottom: 0px;
+}
+.studio.b-anime_status_tag {
+    background-color: var(--selection-bckg);
+    border: 1px solid var(--bckg-lighter) !important;
+}
+.b-anime_status_tag.studio[href]:hover {
+    background-color: var(--my-clr);
 }
