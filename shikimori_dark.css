@@ -714,9 +714,9 @@ body[data-locale=ru] .b-new_marker:before {
 .b-comments :is(.comments-loader, .comments-hider, .comments-expander),
 :is(.b-comments, .b-forum) .faye-loader {
   background-color: var(--bckg-dark);
-  border-color: var(--txt-secondary-dark);
+  border-color: none;
   color: var(--txt-secondary);
-  border: none;
+  border: 1px solid var(--bckg-lighter);
 }
 :is(.p-animes-show, .p-mangas-show, .p-ranobe-show) .other-names:hover,
 :is(.b-comments, .b-forum)
@@ -874,12 +874,13 @@ code.b-code_inline {
 .b-quote .quoteable:before {
   background-color: var(--bckg-dark);
   color: var(--txt-primary);
+  border-color: var(--selection-bckg)
 }
 .b-spoiler_block > span {
   background-color: var(--bckg-dark);
 }
 .b-spoiler_block > span:hover {
-  background-color: var(--bckg-primary);
+  background-color: var(--selection-bckg);
 }
 /* Text editor заголовок */
 .b-spoiler_block
