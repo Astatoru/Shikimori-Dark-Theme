@@ -639,6 +639,13 @@ body[data-locale=ru] .b-new_marker:before {
     background-color: var(--bckg-primary);
     color: var(--txt-primary);
   }
+  .studio.b-anime_status_tag {
+    background-color: var(--selection-bckg);
+    border: 1px solid var(--bckg-lighter) !important;
+}
+.b-anime_status_tag.studio[href]:hover {
+  background-color: var(--my-clr);
+}
 }
 
 /* #status minified (#tournaments) */
