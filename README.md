@@ -8,7 +8,7 @@ _В разработке!_
 
 ```css
 /* Импорт стиля */
-@import url(https://raw.githubusercontent.com/Dedonych/Shikimori-Dark-Theme/master/shikimori_dark.css);
+@import url("https://raw.githubusercontent.com/Astatoru/Shikimori-Dark-Theme-Fork/master/shikimori_dark.css");
 
 :root {
   --my-clr:/* Ваш основной цвет (стандартный - #5292d2 - светло синий)*/ ;
