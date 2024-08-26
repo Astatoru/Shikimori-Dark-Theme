@@ -1,3 +1,5 @@
+/* @import url("https://raw.githubusercontent.com/Astatoru/Shikimori-Dark-Theme-Fork/master/shikimori_dark.css"); */
+
 html,
 body {
   color-scheme: dark;
@@ -392,7 +394,7 @@ header.head h2,
 .b-link_button,
 .b-poll .poll-actions .vote,
 .b-poll .poll-actions .abstain {
-  background: var(--bckg-lighter);
+  background: var(--bckg-dark);
   color: var(--txt-primary);
   border: 0;
 }
@@ -406,7 +408,7 @@ input:focus {
 .b-poll .poll-actions .vote:hover,
 .b-poll .poll-actions .abstain:hover {
   border-color: grey;
-  background-color: var(--bckg-primary);
+  background-color: var(--selection-bckg);
 }
 .b-form.green-form {
   background: var(--bckg-dark);
@@ -716,7 +718,7 @@ body[data-locale=ru] .b-new_marker:before {
   background-color: var(--bckg-dark);
   border-color: none;
   color: var(--txt-secondary);
-  border: 1px solid var(--bckg-lighter);
+  border: none;
 }
 :is(.p-animes-show, .p-mangas-show, .p-ranobe-show) .other-names:hover,
 :is(.b-comments, .b-forum)
@@ -726,7 +728,7 @@ body[data-locale=ru] .b-new_marker:before {
     .comments-hider,
     .comments-expander
   ):hover {
-  background-color: var(--bckg-primary);
+  background-color: var(--selection-bckg);
   border-color: var(--txt-secondary-dark);
   color: var(--txt-secondary);
 }
