@@ -1325,6 +1325,7 @@ max-height: calc(100vh - var(--top-menu-height)); overflow-y: auto;
 .studio.b-anime_status_tag {
     background-color: var(--selection-bckg);
     border: 1px solid var(--bckg-lighter) !important;
+    color: var(--txt-primary);
 }
 .b-anime_status_tag.studio[href]:hover {
     background-color: var(--my-clr);
