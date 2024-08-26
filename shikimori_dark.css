@@ -603,6 +603,12 @@ body[data-locale=ru] .b-offtopic_marker:before {
   border: 2px solid #5c2940 !important;
 }
 
+/* new marker */
+body[data-locale=ru] .b-new_marker:before {
+  background-color:#537ca6 !important;
+  border:none;
+}
+
 /* #main status tag */
 .b-anime_status_tag {
   background-color: var(--bckg-primary);
