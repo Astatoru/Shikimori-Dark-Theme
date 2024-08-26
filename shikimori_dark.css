@@ -396,7 +396,7 @@ header.head h2,
 .b-poll .poll-actions .abstain {
   background: var(--bckg-dark);
   color: var(--txt-primary);
-  border: 2px solid var(--bckg-lighter);
+  border: 1px solid var(--bckg-lighter);
 }
 input:focus {
   border-color: grey !important;
@@ -718,7 +718,7 @@ body[data-locale=ru] .b-new_marker:before {
   background-color: var(--bckg-dark);
   border-color: none;
   color: var(--txt-secondary);
-  border: 2px solid var(--bckg-lighter);
+  border: 1px solid var(--bckg-lighter);
 }
 :is(.p-animes-show, .p-mangas-show, .p-ranobe-show) .other-names:hover,
 :is(.b-comments, .b-forum)
