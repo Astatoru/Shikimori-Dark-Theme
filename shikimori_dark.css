@@ -396,7 +396,7 @@ header.head h2,
 .b-poll .poll-actions .abstain {
   background: var(--bckg-dark);
   color: var(--txt-primary);
-  border: 0;
+  border: 2px solid var(--bckg-lighter);
 }
 input:focus {
   border-color: grey !important;
@@ -407,7 +407,7 @@ input:focus {
 .b-link_button:hover,
 .b-poll .poll-actions .vote:hover,
 .b-poll .poll-actions .abstain:hover {
-  border-color: grey;
+  border-color: var(--selection-bckg);
   background-color: var(--selection-bckg);
 }
 .b-form.green-form {
