@@ -718,7 +718,7 @@ body[data-locale=ru] .b-new_marker:before {
   background-color: var(--bckg-dark);
   border-color: none;
   color: var(--txt-secondary);
-  border: none;
+  border: 2px solid var(--bckg-lighter);
 }
 :is(.p-animes-show, .p-mangas-show, .p-ranobe-show) .other-names:hover,
 :is(.b-comments, .b-forum)
@@ -729,7 +729,7 @@ body[data-locale=ru] .b-new_marker:before {
     .comments-expander
   ):hover {
   background-color: var(--selection-bckg);
-  border-color: var(--txt-secondary-dark);
+  border-color: var(--selection-bckg);
   color: var(--txt-secondary);
 }
 
