@@ -783,7 +783,7 @@ body[data-locale=ru] .b-offtopic_marker:before {
 
 /* #comments replies  */
 .b-replies {
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0px;
 }
