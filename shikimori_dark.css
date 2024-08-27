@@ -1334,21 +1334,28 @@ max-height: calc(100vh - var(--top-menu-height)); overflow-y: auto;
 }
 .ongoing.b-anime_status_tag {
   border: 1px solid var(--bckg-lighter) !important;
-  background-color: #a03c3c;
+  background-color: #7e8242;
 }
 .b-anime_status_tag.released {
   border: 1px solid var(--bckg-lighter) !important;
   background-color: #42824a;
 }
+.anons.b-anime_status_tag {
+  border: 1px solid var(--bckg-lighter) !important;
+  background-color: #a03c3c;
+}
+.paused.b-anime_status_tag {
+  border: 1px solid var(--bckg-lighter) !important;
+  background-color: #634282;
+}
 .news.b-anime_status_tag {
   border: 1px solid var(--bckg-lighter) !important;
 }
-/* User list anime status */
 .p-user_rates-index .list-lines tr td .anons {
-  color: #ff2a2a;
+  color: #D12727;
 }
 .p-user_rates-index .list-lines tr td .ongoing {
-  color: #a9dc4f;
+  color: #d0b228;
 }
 .p-user_rates-index .list-lines tr td .rate-text {
   color: #c497da;
