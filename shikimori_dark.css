@@ -644,9 +644,12 @@ body[data-locale=ru] .b-new_marker:before {
   &:is(.other, .) {
     background-color: var(--bckg-primary);
     color: var(--txt-primary);
+    border: 1px solid var(--bckg-lighter) !important;
   }
 }
-
+.b-anime_status_tag.released {
+  border: 1px solid var(--bckg-lighter) !important;
+}
 /* #status minified (#tournaments) */
 .b-catalog_entry:is(
     .on_hold,
