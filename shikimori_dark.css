@@ -77,7 +77,7 @@ html[data-color-mode="light"] {
   &,
   .nothing_found,
   .search-mode {
-    background: var(--bckg-light);
+    background: var(--bckg-dark);
     color: var(--txt-primary);
     border-color: var(--clr-main-dark);
   }
@@ -347,11 +347,6 @@ header.head h2,
     background-color: color-mix(in srgb, var(--first), #000 20%);
   }
 }
-/* Change color of comments inside anime list */
-.p-user_rates-index .list-lines tr td .rate-text {
-	  color:#98C379;
-
-  }
 /* Профиль: Активность на сайте */
 .bar.simple .bar {
   &.s0 {
@@ -402,8 +397,12 @@ textarea,
   color: var(--txt-primary);
   border: 1px solid var(--bckg-lighter);
 }
+.l-top_menu-v2 .global-search input {
+  -webkit-border-radius:0px;
+  border-radius:0px;
+}
 input:focus {
-  border-color: grey !important;
+  border-color: var(--selection-bckg) !important;
 }
 .b-form input[type="submit"]:hover,
 .b-button:hover,
@@ -463,6 +462,9 @@ input:focus {
 /*Списки: Изменение тайтла */
 .p-user_rates-index .list-lines tr.edit-form form {
   background-color: var(--bckg-primary);
+  border-top:none;
+  border-bottom:none;
+  margin:0px;
 }
 /* Списки: свернуто кнопка */
 .collapsed {
@@ -1327,6 +1329,7 @@ max-height: calc(100vh - var(--top-menu-height)); overflow-y: auto;
     border-bottom-color: #333333;
     margin-bottom: 0px;
 }
+/* Studio tag color */
 .studio.b-anime_status_tag {
     background-color: var(--selection-bckg);
     border: 1px solid var(--bckg-lighter) !important;
@@ -1334,4 +1337,14 @@ max-height: calc(100vh - var(--top-menu-height)); overflow-y: auto;
 }
 .b-anime_status_tag.studio[href]:hover {
     background-color: var(--my-clr);
+}
+/* User list anime status */
+.p-user_rates-index .list-lines tr td .anons {
+  color:#f34b4b;
+}
+.p-user_rates-index .list-lines tr td .ongoing {
+  color:#a9dc4f;
+}
+.p-user_rates-index .list-lines tr td .rate-text {
+  color:#c497da;
 }
