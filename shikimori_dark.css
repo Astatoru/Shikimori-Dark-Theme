@@ -882,6 +882,7 @@ code.b-code_inline {
 }
 .b-quote-v2,
 .b-spoiler_block > div,
+.b-spoiler_block>span,
 .b-quote .quoteable:before {
   background-color: var(--bckg-dark);
   color: var(--txt-primary);
