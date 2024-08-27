@@ -375,6 +375,9 @@ header.head h2,
 }
 
 /* #input style #button */
+input,
+select,
+textarea,
 .subheadline-input[type="submit"],
 .subheadline-input[type="text"],
 .subheadline-input[type="password"],
@@ -859,7 +862,7 @@ code.b-code_inline,
   color: var(--txt-primary);
 }
 .b-spoiler_inline.is-opened {
-  background-color: rgb(82, 82, 82);
+  background-color: var(--bckg-dark);
 }
 code.b-code_inline {
   color: #ba3453;
@@ -879,10 +882,11 @@ code.b-code_inline {
   color: var(--txt-primary);
   border-color: var(--selection-bckg)
 }
-.b-spoiler_block > span {
-  background-color: var(--bckg-dark);
+.b-spoiler_inline.is-opened:hover {
+  background-color: var(--selection-bckg);
+  cursor: pointer;
 }
-.b-spoiler_block > span:hover {
+.b-spoiler_inline:not(.is-opened):hover  {
   background-color: var(--selection-bckg);
 }
 /* Text editor заголовок */
