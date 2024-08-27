@@ -81,10 +81,6 @@ html[data-color-mode="light"] {
     color: var(--txt-primary);
     border-color: var(--clr-main-dark);
   }
-/* user anime list search */
-.b-collection_search .field input {
-  background-color: var(--bckg-primary);
-}
   /* remove shadow #search  */
   &::after,
   &::before {
@@ -397,7 +393,8 @@ header.head h2,
 .b-shiki_editor .upload .link-value,
 .b-link_button,
 .b-poll .poll-actions .vote,
-.b-poll .poll-actions .abstain {
+.b-poll .poll-actions .abstain,
+.b-collection_search .field input {
   background: var(--bckg-dark);
   color: var(--txt-primary);
   border: 1px solid var(--bckg-lighter);
