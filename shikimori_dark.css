@@ -273,25 +273,6 @@ header.head h2,
 :is(.sticky-tooltip, .tooltip-inner) .close {
   display: none;
 }
-
-/* #form action list and list title */
-:is(.b-user_rate, .b-catalog_entry-tooltip)
-  .b-add_to_list
-  :is(.trigger, .option),
-.b-add_to_list :is(.trigger, .option) {
-  color: var(--link-color) !important;
-  background: var(--bckg-primary) !important;
-  border-color: var(--bckg-dark) !important;
-}
-:is(.b-user_rate, .b-catalog_entry-tooltip)
-  .b-add_to_list
-  :is(.trigger, .edit) {
-  color: var(--clr-main-primary);
-}
-.b-add_to_list .trigger-arrow {
-	  color: var(--link-color) !important;
-
-  }
 /* #profile */
 .b-stats_bar .stat_names .stat_name a {
   color: var(--txt-secondary);
@@ -1334,7 +1315,7 @@ max-height: calc(100vh - var(--top-menu-height)); overflow-y: auto;
 }
 .ongoing.b-anime_status_tag {
   border: 1px solid var(--bckg-lighter) !important;
-  background-color: #7e8242;
+  background-color: #8c7923;
 }
 .b-anime_status_tag.released {
   border: 1px solid var(--bckg-lighter) !important;
@@ -1348,15 +1329,105 @@ max-height: calc(100vh - var(--top-menu-height)); overflow-y: auto;
   border: 1px solid var(--bckg-lighter) !important;
   background-color: #634282;
 }
+.b-anime_status_tag.episode {
+  background-color: var(--selection-bckg);
+  border: 1px solid var(--bckg-lighter) !important;
+  color: var(--txt-primary);
+}
 .news.b-anime_status_tag {
   border: 1px solid var(--bckg-lighter) !important;
 }
+.b-new_marker {
+  border: 1px solid var(--bckg-lighter) !important;
+}
 .p-user_rates-index .list-lines tr td .anons {
-  color: #D12727;
+  color: #d12727;
 }
 .p-user_rates-index .list-lines tr td .ongoing {
   color: #d0b228;
 }
 .p-user_rates-index .list-lines tr td .rate-text {
   color: #c497da;
+}
+.b-editable_grid thead th {
+  background: var(--bckg-primary);
+}
+.b-editable_grid tbody tr:nth-child(odd) td {
+  background: var(--bckg-lighter);
+}
+header.head {
+  margin-bottom:0px;
+  border-bottom:none;
+}
+/* Dropped */
+.b-add_to_list.dropped .trigger,
+.b-add_to_list.dropped .option {
+  background:#402121;
+  border-color:#663434;
+}
+.b-add_to_list.dropped .trigger-arrow {
+  color:#FC575E;
+}
+.b-add_to_list.dropped .trigger-arrow:hover {
+  color:#FC575E;
+}
+/* Planned */
+.b-add_to_list.planned .trigger,
+.b-add_to_list.planned .option {
+  background:#2D4359;
+  border-color:#416080;
+}
+.b-add_to_list.planned .trigger-arrow {
+  color:var(--link-color);
+}
+.b-add_to_list.planned .trigger-arrow:hover {
+  color:var(--link-color);
+}
+/* Completed */
+.b-add_to_list.completed .trigger,
+.b-add_to_list.completed .option {
+  background:#264021;
+  border-color:#3C6634;
+}
+.b-add_to_list.completed .trigger-arrow {
+  color:#419541;
+}
+.b-add_to_list.completed .trigger-arrow:hover {
+  color:#419541;
+}
+/* Rewatching */
+.b-add_to_list.rewatching .trigger,
+.b-add_to_list.rewatching .option {
+  background:#2D4359;
+  border-color:#663434;
+}
+.b-add_to_list.rewatching .trigger-arrow {
+  color:var(--link-color);
+}
+.b-add_to_list.rewatching .trigger-arrow:hover {
+  color:var(--link-color);
+}
+/* Watching */
+.b-add_to_list.watching .trigger,
+.b-add_to_list.watching .option {
+  background:#2D4359;
+  border-color:#416080;
+}
+.b-add_to_list.watching .trigger-arrow {
+  color:var(--link-color);
+}
+.b-add_to_list.watching .trigger-arrow:hover {
+  color:var(--link-color);
+}
+/* On hold */
+.b-add_to_list.on_hold .trigger,
+.b-add_to_list.on_hold .option {
+  background:#404040;
+  border-color:#666666;
+}
+.b-add_to_list.on_hold .trigger-arrow {
+  color:#7B8084;
+}
+.b-add_to_list.on_hold .trigger-arrow:hover {
+  color:#7B8084;
 }
