@@ -859,6 +859,9 @@ code.b-code_inline {
   color: var(--txt-primary);
   border-color: var(--selection-bckg)
 }
+.b-spoiler_block>span:hover {
+  background-color: var(--selection-bckg);
+}
 .b-spoiler_inline.is-opened:hover {
   background-color: var(--selection-bckg);
   cursor: pointer;
