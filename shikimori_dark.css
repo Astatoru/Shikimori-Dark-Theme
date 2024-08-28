@@ -1306,12 +1306,12 @@ max-height: calc(100vh - var(--top-menu-height)); overflow-y: auto;
 }
 /* Studio tag color */
 .studio.b-anime_status_tag {
-    background-color: var(--selection-bckg);
+    background-color: #4C4C4C;
     border: 1px solid var(--bckg-lighter) !important;
     color: var(--txt-primary);
 }
 .b-anime_status_tag.studio[href]:hover {
-    background-color: var(--my-clr);
+    background-color: var(--bckg-primary);
 }
 .ongoing.b-anime_status_tag {
   border: 1px solid var(--bckg-lighter) !important;
