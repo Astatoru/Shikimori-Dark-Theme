@@ -1337,6 +1337,22 @@ max-height: calc(100vh - var(--top-menu-height)); overflow-y: auto;
 .news.b-anime_status_tag {
   border: 1px solid var(--bckg-lighter) !important;
 }
+.review-positive.b-anime_status_tag {
+  border: 1px solid var(--bckg-lighter) !important;
+  background-color: #42824a;
+}
+.review-negative.b-anime_status_tag {
+  border: 1px solid var(--bckg-lighter) !important;
+  background-color: #a03c3c;
+}
+.review-neutral.b-anime_status_tag {
+  border: 1px solid var(--bckg-lighter) !important;
+  background-color: var(--selection-bckg);
+}
+.review.b-anime_status_tag {
+  border: 1px solid var(--bckg-lighter) !important;
+  background-color: var(--txt-secondary-dark);
+}
 .b-new_marker {
   border: 1px solid var(--bckg-lighter) !important;
 }
